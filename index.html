@@ -2,152 +2,787 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>市場推廣</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>香港兒童行業推廣｜招生及廣告服務專家</title>
+  <meta name="description" content="專注兒童行業的香港市場推廣團隊，提供招生、廣告、數碼推廣、活動策劃等一站式服務。適合個人商戶、中小企及企業級客戶。">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+HK:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   <style>
-    /* 全局樣式 */
-    body {
-      font-family: Arial, sans-serif;
+    html, body {
       margin: 0;
       padding: 0;
-      background-color: #f0f8ff; /* 淺藍色背景 */
-      color: #333;
+      font-family: 'Noto Sans HK', Arial, sans-serif;
+      background: #f7faff;
+      color: #23294b;
+      scroll-behavior: smooth;
     }
-
+    /* Hook Banner */
+    .hook {
+      background: linear-gradient(90deg, #3347ff 0%, #53b7fb 100%);
+      color: #fff;
+      border-radius: 22px 22px 8px 8px;
+      padding: 2.2em 1em 1.5em 1em;
+      margin: 2.2em auto 1.2em auto;
+      max-width: 880px;
+      font-size: 1.55em;
+      font-weight: 700;
+      box-shadow: 0 6px 24px -4px rgba(79,124,255,0.13), 0 2px 8px rgba(41, 98, 255, 0.06);
+      text-align: center;
+      letter-spacing: 2px;
+      position: relative;
+      overflow: hidden;
+    }
+    .hook span {
+      display: inline-block;
+      background: rgba(255,255,255,0.13);
+      border-radius: 8px;
+      padding: 0.08em 0.7em;
+      margin: 0.2em 0;
+      font-size: 0.93em;
+      font-weight: 500;
+      letter-spacing: 1px;
+      box-shadow: 0 1px 8px 0 rgba(255,255,255,0.04);
+    }
+    /* Header */
     header {
-      background-color: #1e90ff; /* 深藍色 */
-      color: white;
-      padding: 20px 10px;
+      background: none;
+      color: #3347ff;
+      padding: 0.7rem 1rem 1.1rem 1rem;
       text-align: center;
     }
-
-    h1, h2 {
-      margin: 10px 0;
-    }
-
-    h1 {
-      font-size: 2.5em;
-    }
-
-    h2 {
-      color: #1e90ff; /* 深藍色 */
-    }
-
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      margin: 20px auto;
-    }
-
-    section {
-      background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-      margin-bottom: 20px;
-      padding: 20px;
-    }
-
-    section:last-child {
-      margin-bottom: 0;
-    }
-
-    .contact-form label {
-      display: block;
-      margin-bottom: 6px;
+    header h1 {
+      margin: 0 0 0.25em 0;
+      font-size: 2.2em;
+      letter-spacing: 2px;
       font-weight: bold;
+      text-shadow: 1px 2px 10px #c0d4ff88;
     }
-
-    .contact-form input, 
-    .contact-form textarea {
-      width: 100%;
-      padding: 10px;
-      margin-bottom: 10px;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      box-sizing: border-box;
+    header p {
+      margin: 0.7em 0 0 0;
+      font-size: 1.1em;
+      color: #3d4f9f;
+      letter-spacing: 1px;
     }
-
-    .contact-form button {
-      background-color: #1e90ff;
-      color: white;
-      padding: 10px 20px;
+    /* Main Container */
+    main {
+      max-width: 900px;
+      margin: 2rem auto 2.5rem auto;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: 0 6px 32px 0 rgba(51,71,255,0.08), 0 1.5px 8px rgba(41, 98, 255, 0.06);
+    }
+    @media (max-width: 900px) { main { margin: 1rem 0.2rem; } }
+    @media (max-width: 700px) {
+      main { padding: 1.1rem; }
+      .hook { padding: 1.3em 0.5em 1em 0.5em; font-size: 1.08em; }
+    }
+    h2 {
+      color: #3347ff;
+      font-size: 1.3em;
+      margin-bottom: 0.7em;
+      letter-spacing: 2px;
+      font-weight: 700;
+    }
+    section {
+      margin-bottom: 2.2rem;
+    }
+    /* 行業困境 */
+    .industry-challenge {
+      background: #f3f7ff;
+      border-left: 5px solid #53b7fb;
+      border-radius: 9px;
+      padding: 1.2em 1.2em 1.3em 1.3em;
+      font-size: 1.09em;
+      box-shadow: 0 1px 6px 0 #dbe7ff44;
+      margin-bottom: 1.5em;
+    }
+    .industry-challenge strong {
+      color: #3347ff;
+      font-weight: 700;
+      font-size: 1.04em;
+    }
+    /* Testimonials */
+    .testimonials {
+      display: flex;
+      flex-direction: row;
+      gap: 1.5em;
+      margin-bottom: 0.7em;
+    }
+    @media (max-width: 700px) {
+      .testimonials { flex-direction: column; gap: 1.1em; }
+    }
+    .testimonial {
+      background: linear-gradient(135deg, #e8f1ff 64%, #f8fbff 100%);
+      border-left: 6px solid #3347ff;
+      border-radius: 12px;
+      padding: 1.1em 1.3em 1.5em 1.3em;
+      flex: 1 1 0;
+      min-width: 0;
+      position: relative;
+      box-shadow: 0 1px 6px 0 #dbe7ff40;
+    }
+    .testimonial:before {
+      content: "“";
+      font-size: 2.7em;
+      color: #53b7fb;
+      vertical-align: top;
+      line-height: 0.7;
+      margin-right: 0.18em;
+      position: absolute;
+      left: 12px;
+      top: 2px;
+      opacity: 0.23;
+      z-index: 0;
+    }
+    .testimonial:last-child { border-left-color: #45e1c3; }
+    .testimonial-header {
+      display: flex; align-items: center; gap: 0.7em;
+      margin-bottom: 0.3em;
+    }
+    .testimonial-avatar {
+      width: 40px; height: 40px; border-radius: 50%; background: #dbe7ff;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5em; color: #5d6cc7; font-weight: bold;
+    }
+    .testimonial-name {
+      font-size: 1.07em; color: #3347ff; font-weight: bold;
+      letter-spacing: 1px;
+    }
+    .testimonial-company {
+      font-size: 0.95em; color: #4f7cffab; margin-left: 0.2em;
+    }
+    .testimonial-stars {
+      color: #ffc107; font-size: 1.13em; margin-bottom: 0.1em;
+      letter-spacing: 1px;
+    }
+    .testimonial-result {
+      margin-top: 0.9em; color: #24b183; font-weight: 500; font-size: 0.99em;
+    }
+    /* 方案卡片(手機) */
+    .plans-cards {
+      display: none;
+      gap: 1.3em;
+      flex-direction: column;
+      margin-bottom: 1.2em;
+    }
+    @media (max-width: 800px) {
+      .plans-table-box { display: none; }
+      .plans-cards { display: flex; }
+    }
+    .plan-card {
+      background: #f3f7ff;
+      border-radius: 13px;
+      box-shadow: 0 1px 6px 0 #dbe7ff33;
+      padding: 1.1em 1.3em 1.4em 1.3em;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+    }
+    .plan-title {
+      font-size: 1.13em; font-weight: bold; color: #3347ff;
+      margin-bottom: 0.7em; letter-spacing: 1.5px;
+    }
+    .plan-price {
+      font-size: 1.25em; font-weight: bold; color: #24b183;
+      margin-bottom: 0.25em;
+    }
+    .plan-oldprice {
+      color: #bbb; font-size: 0.98em; margin-bottom: 0.25em;
+      text-decoration: line-through;
+    }
+    .plan-list {
+      list-style: none; padding: 0; margin: 0 0 0.7em 0;
+      font-size: 0.99em;
+    }
+    .plan-list li {
+      display: flex; align-items: center; gap: 0.45em;
+      margin-bottom: 0.35em;
+      color: #2d388a;
+    }
+    .plan-reach {
+      color: #53b7fb; font-size: 0.99em;
+      margin-bottom: 0.5em;
+    }
+    .plan-btn {
+      background: #3347ff;
+      color: #fff;
       border: none;
-      border-radius: 4px;
-      cursor: pointer;
+      border-radius: 7px;
+      padding: 0.7em 1.9em;
+      font-weight: bold;
       font-size: 1em;
+      margin-top: 0.4em;
+      box-shadow: 0 1px 6px 0 #3347ff44;
+      cursor: pointer;
+      transition: background 0.15s;
+      letter-spacing: 1px;
+      outline: none;
     }
-
-    .contact-form button:hover {
-      background-color: #4682b4; /* 較深的藍色 */
+    .plan-btn:hover {
+      background: #24b183;
     }
-
+    /* 桌面表格 */
+    .plans-table-box {
+      background: #f9fbff;
+      border-radius: 13px;
+      padding: 1.3em 0.6em 1.7em 0.6em;
+      box-shadow: 0 1px 8px 0 #dbe7ff26;
+      overflow-x: auto;
+      margin-bottom: 1em;
+    }
+    .plans-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 1em;
+      min-width: 650px;
+      background: transparent;
+    }
+    .plans-table th, .plans-table td {
+      padding: 0.85em 0.5em;
+      text-align: center;
+      border-bottom: 1px solid #e0eafc;
+      vertical-align: middle;
+    }
+    .plans-table th {
+      background: #e6f0ff;
+      font-size: 1.1em;
+      color: #3347ff;
+      letter-spacing: 1px;
+      font-weight: 600;
+      border-top: none;
+    }
+    .plans-table tr:last-child td { border-bottom: none; }
+    .plans-table .service { text-align: left; font-weight: 500; color: #3256a8; }
+    .plans-table .icon { font-size: 1.23em; vertical-align: middle; }
+    .plans-table tr.highlight { background: #e8f5ff; font-weight: 700; }
+    .plans-table tr.highlight td { font-size: 1.05em; color: #2d388a; }
+    .plans-table td b { color: #24b183; font-size: 1.09em; letter-spacing: 1px; }
+    .plans-table del { color: #bbb; }
+    .plans-table sup { font-size: 0.85em; color: #888; }
+    /* Remark List */
+    .remark-list {
+      margin: 1.5em 0 0.5em 1.2em;
+      font-size: 0.99em;
+      color: #666;
+      list-style: disc;
+    }
+    .remark-list li { margin-bottom: 0.25em; }
+    /* CTA區 */
+    .cta {
+      background: linear-gradient(90deg, #3347ff 70%, #53b7fb 100%);
+      color: #fff;
+      border-radius: 13px;
+      padding: 2.2em 1.2em 1em 1.2em;
+      margin: 2.3em 0 1.3em 0;
+      text-align: center;
+      font-size: 1.16em;
+      box-shadow: 0 2px 14px rgba(79,124,255,0.13);
+      position: relative;
+    }
+    .cta strong { font-size: 1.22em; letter-spacing: 1.3px; display: block; margin-bottom: 0.5em; }
+    .cta .tag {
+      color: #fff; background: #24b183; border-radius: 5px;
+      padding: 2px 12px; font-size: 0.97em; margin: 0 4px;
+      display: inline-block; letter-spacing: 1px; margin-bottom: 0.2em; font-weight: 600;
+    }
+    .cta .cta-list {
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 0.7em; margin: 1em 0 0.7em 0;
+    }
+    .cta .cta-list span {
+      background: rgba(255,255,255,0.13); color: #fff; border-radius: 5px;
+      padding: 0.20em 0.9em; font-size: 0.97em; font-weight: 500; letter-spacing: 1px;
+      margin-bottom: 0.15em; box-shadow: 0 1px 8px 0 rgba(255,255,255,0.04); display: inline-block;
+    }
+    .cta .cta-action { margin-top: 1.3em; font-weight: 500; font-size: 1.11em; }
+    /* WhatsApp浮動掣 */
+    .wa-float {
+      position: fixed; right: 18px; bottom: 22px; z-index: 999;
+      background: #25d366;
+      color: #fff;
+      border-radius: 50%;
+      width: 60px; height: 60px;
+      display: flex; align-items: center; justify-content: center;
+      box-shadow: 0 4px 18px rgba(39, 185, 89, 0.28);
+      font-size: 2.1em;
+      cursor: pointer;
+      outline: none; border: none;
+      transition: box-shadow 0.18s, background 0.17s;
+    }
+    .wa-float:hover, .wa-float:focus {
+      background: #1da955;
+      box-shadow: 0 8px 32px rgba(39, 185, 89, 0.38);
+    }
+    .wa-float[aria-label]:after {
+      content: attr(aria-label);
+      position: absolute;
+      right: 70px;
+      bottom: 22px;
+      background: #23294b;
+      color: #fff;
+      font-size: 1em;
+      padding: 0.3em 0.7em;
+      border-radius: 7px;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.18s;
+    }
+    .wa-float:hover[aria-label]:after, .wa-float:focus[aria-label]:after {
+      opacity: 1;
+    }
+    /* CTA WhatsApp按鈕 */
+    .whatsapp-btn {
+      margin-top: 1.2em;
+      background: #25d366;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      padding: 0.75em 2.5em;
+      font-size: 1.15em;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(39, 185, 89, 0.13);
+      transition: background .2s, color .2s, box-shadow .2s, transform .1s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.65em;
+      letter-spacing: 1px;
+      font-family: inherit;
+      outline: none;
+      position: relative;
+      overflow: hidden;
+    }
+    .whatsapp-btn:active { transform: scale(0.97); }
+    .whatsapp-btn:focus-visible { outline: 2px solid #3347ff; }
+    .whatsapp-btn:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 50%; top: 50%;
+      width: 0; height: 0;
+      background: rgba(255,255,255,0.22);
+      border-radius: 100%;
+      transform: translate(-50%, -50%);
+      transition: width 0.4s, height 0.4s;
+      z-index: 0;
+      pointer-events: none;
+    }
+    .whatsapp-btn:active:after {
+      width: 200px;
+      height: 200px;
+      transition: width 0s, height 0s;
+    }
+    .whatsapp-btn i { position: relative; z-index: 1; }
+    /* FAQ區塊 */
+    .faq-area { margin: 2em 0; }
+    .faq-title { font-size: 1.16em; font-weight: 700; color: #3347ff; margin-bottom: 1em; }
+    .faq-list { max-width: 800px; margin: 0 auto; }
+    .faq-item {
+      background: #f3f7ff;
+      border-radius: 8px;
+      margin-bottom: 1em;
+      box-shadow: 0 1px 4px 0 #dbe7ff22;
+      overflow: hidden;
+    }
+    .faq-question {
+      font-weight: 600;
+      color: #3347ff;
+      font-size: 1.06em;
+      padding: 1em 1.6em 1em 1.2em;
+      cursor: pointer;
+      position: relative;
+      transition: background 0.1s;
+    }
+    .faq-question::after {
+      content: '\f078';
+      font-family: "Font Awesome 6 Free";
+      font-weight: 900;
+      position: absolute;
+      right: 1.2em; top: 50%;
+      transform: translateY(-50%);
+      transition: transform 0.24s;
+      font-size: 1.07em;
+    }
+    .faq-item.active .faq-question { background: #e6f0ff; }
+    .faq-item.active .faq-question::after { transform: translateY(-50%) rotate(180deg);}
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      background: #f9fbff;
+      color: #23294b;
+      font-size: 1em;
+      padding: 0 1.6em 0 1.2em;
+      transition: max-height 0.32s cubic-bezier(.68,-0.55,.27,1.55),padding 0.2s;
+    }
+    .faq-item.active .faq-answer {
+      max-height: 200px;
+      padding: 0.8em 1.6em 1.1em 1.2em;
+      transition: max-height 0.32s cubic-bezier(.68,-0.55,.27,1.55),padding 0.22s;
+    }
+    /* ICON COLORS */
+    .icon-wa { color: #25d366; }
+    .icon-fb { color: #1877f3; }
+    .icon-ig { color: #c32aa3; }
+    .icon-dollar { color: #fc8c0a; font-weight: bold;}
+    /* 無障礙 */
+    .whatsapp-btn:focus-visible, .plan-btn:focus-visible, .wa-float:focus-visible { outline: 2px solid #3347ff; }
+    /* Stanford Blur */
+    .stanford-blur {
+      filter: blur(7px);
+      user-select: none;
+      pointer-events: none;
+      background: #fff;
+      color: transparent;
+      border-radius: 5px;
+      display: inline-block;
+      padding: 1px 6px;
+    }
+    /* Footer */
     footer {
       text-align: center;
-      padding: 10px;
-      background-color: #1e90ff;
-      color: white;
-      font-size: 0.9em;
+      color: #b1b6d2;
+      font-size: 0.97em;
+      padding: 2em 0 1.4em 0;
+      letter-spacing: 1px;
     }
-
-    footer a {
-      color: #f0f8ff;
+    .footer-links {
+      margin: 0.6em 0 0.2em 0;
+      display: flex;
+      justify-content: center;
+      gap: 1.4em;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      color: #3347ff;
       text-decoration: none;
+      font-size: 1.13em;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.37em;
+      opacity: 0.82;
+      transition: opacity 0.13s;
     }
-
-    footer a:hover {
-      text-decoration: underline;
+    .footer-links a:hover { opacity: 1; }
+    .footer-icp { color: #b1b6d2; font-size: 0.94em; margin-top: 0.2em; }
+    @media (max-width:500px) {
+      .footer-links { flex-direction: column; gap: 0.5em; }
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>市場推廣</h1>
-    <p>為您的品牌提供專業市場推廣解決方案</p>
-  </header>
+  <!-- 浮動WhatsApp查詢掣 -->
+  <a href="https://wa.me/852XXXXXXXX" class="wa-float" aria-label="WhatsApp即時查詢" target="_blank" onclick="gtag && gtag('event','click',{event_category:'CTA',event_label:'Floating WhatsApp'})">
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
-  <div class="container">
-    <!-- 公司背景及簡介 -->
-    <section>
-      <h2>公司背景及簡介</h2>
-      <p>
-        我們是一家專注於市場推廣與品牌管理的專業公司，擁有多年的行業經驗與成功案例。
-        我們的使命是幫助客戶提高品牌知名度，增強市場競爭力，並實現可持續增長。
-      </p>
-      <p>
-        我們的團隊由一群充滿熱忱且富有創意的專家組成，致力於為每位客戶打造量身定制的推廣方案。
-      </p>
-    </section>
-
-    <!-- 服務範疇及收費概覽 -->
-    <section>
-      <h2>服務範疇及收費概覽</h2>
-      <ul>
-        <li>社交媒體管理與內容創作 - 起價：$5,000/月</li>
-        <li>搜尋引擎優化（SEO）服務 - 起價：$8,000/月</li>
-        <li>品牌設計與重塑 - 起價：$20,000/專案</li>
-        <li>數位廣告投放（Google Ads, Facebook Ads） - 按廣告預算計收</li>
-      </ul>
-      <p>如需詳細服務內容與報價，請與我們聯繫。</p>
-    </section>
-
-    <!-- 聯絡我們 -->
-    <section>
-      <h2>聯絡我們</h2>
-      <p>如有任何疑問或需求，請填寫以下表單，我們將盡快回覆您！</p>
-      <form class="contact-form">
-        <label for="email">您的電郵地址</label>
-        <input type="email" id="email" name="email" placeholder="請輸入您的電郵地址" required>
-
-        <label for="message">您的問題或需求</label>
-        <textarea id="message" name="message" rows="5" placeholder="請輸入您的問題或需求" required></textarea>
-
-        <button type="submit">提交</button>
-      </form>
-    </section>
+  <div class="hook">
+    想提升業積？用一個文員價錢，<span>請成隊Marketing Team幫你！</span>
   </div>
+  <header>
+    <h1>你的兒童行業營銷專家</h1>
+    <p>逆市突圍，助你提升業績！</p>
+  </header>
+  <main>
+    <section>
+      <h2>行業現況與挑戰</h2>
+      <div class="industry-challenge">
+        香港出生率連續下跌，加上經濟大環境轉差，
+        <br>兒童行業逆水行舟，點算好？
+        <br><br>
+        <strong>想要突破困局，逆市增長？</strong><br>
+        搵我哋幫手做好市場推廣，
+        <br>幫助你接觸更多潛在客戶，
+        <br><strong>開拓客源 提升業績！</strong>
+      </div>
+      <div style="text-align:right;color:#24b183;font-weight:500;">立即查詢，搵到合適推廣方案！</div>
+    </section>
 
+    <section>
+      <h2>真實客戶見證</h2>
+      <div class="testimonials">
+        <div class="testimonial">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar" aria-hidden="true"><i class="fas fa-user"></i></div>
+            <div>
+              <span class="testimonial-name">李小姐</span>
+              <span class="testimonial-company">｜兒童語言中心</span><br>
+              <span class="testimonial-stars" aria-label="5星好評">★★★★★</span>
+            </div>
+          </div>
+          好興幸認識到你哋，解決到我哋招生嘅問題！<br>
+          之前我哋自己嘗試以各種途徑去招生，但係得到嘅效果都未如理想；即使有反應，都係簡單一兩句就冇之後。<br>
+          認識到項目經理Tommy，幫我哋構思一個有策略嘅招生活動，由策劃到執行，都好幫到我哋！
+          <div class="testimonial-result">招生查詢比以往多出 <b>3倍</b></div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-header">
+            <div class="testimonial-avatar" aria-hidden="true"><i class="fas fa-user-tie"></i></div>
+            <div>
+              <span class="testimonial-name">陳生</span>
+              <span class="testimonial-company">｜兒童教育機構</span><br>
+              <span class="testimonial-stars" aria-label="5星好評">★★★★★</span>
+            </div>
+          </div>
+          係接觸你地之前我都有幫自己公司出廣告，可惜成本同效果遠遠落後於我哋想要嘅目標。<br>
+          認識到你哋之後，你哋通過改寫文案同埋一系列嘅廣告設定成功，以俾我哋原本更低嘅預算收穫更多查詢和曝光機會，比10個讚你哋👍🏻
+          <div class="testimonial-result">曝光率提升 <b>120%</b></div>
+        </div>
+      </div>
+      <div style="text-align:right;color:#24b183;font-weight:500;">立即了解，提升你的招生及宣傳成效！</div>
+    </section>
+
+    <section>
+      <h2>推廣方案套餐</h2>
+      <!-- 桌面版表格 -->
+      <div class="plans-table-box">
+        <table class="plans-table" aria-label="推廣方案套餐比較表">
+          <tr>
+            <th>服務內容</th>
+            <th>個人商戶</th>
+            <th>中小企</th>
+            <th>企業級</th>
+          </tr>
+          <tr>
+            <td class="service">推廣活動構思</td>
+            <td>✓</td><td>✓</td><td>✓</td>
+          </tr>
+          <tr>
+            <td class="service">廣告策劃</td>
+            <td>✓</td><td>✓</td><td>✓</td>
+          </tr>
+          <tr>
+            <td class="service">媒體設計</td>
+            <td>✓</td><td>✓</td><td>✓</td>
+          </tr>
+          <tr>
+            <td class="service">Reel動畫製作<sup>^</sup></td>
+            <td></td><td>✓</td><td>✓</td>
+          </tr>
+          <tr>
+            <td class="service"><span class="icon icon-wa"><i class="fab fa-whatsapp"></i></span> 地區性WhatsApp群組宣傳</td>
+            <td>✓</td><td>✓</td><td>✓</td>
+          </tr>
+          <tr>
+            <td class="service"><span class="icon icon-wa"><i class="fab fa-whatsapp"></i></span> 全港性WhatsApp群組宣傳</td>
+            <td></td><td>✓</td><td>✓</td>
+          </tr>
+          <tr>
+            <td class="service"><span class="icon icon-fb"><i class="fab fa-facebook"></i></span><span class="icon icon-ig"><i class="fab fa-instagram"></i></span> 地區性Facebook IG宣傳</td>
+            <td>✓</td><td>✓</td><td>✓</td>
+          </tr>
+          <tr>
+            <td class="service"><span class="icon icon-fb"><i class="fab fa-facebook"></i></span><span class="icon icon-ig"><i class="fab fa-instagram"></i></span> 全港性Facebook IG宣傳</td>
+            <td></td><td>✓</td><td>✓</td>
+          </tr>
+          <tr>
+            <td class="service"><span class="icon icon-fb"><i class="fab fa-facebook"></i></span><span class="icon icon-ig"><i class="fab fa-instagram"></i></span> 增量Facebook IG廣告</td>
+            <td><span class="icon-dollar">$</span></td><td><span class="icon-dollar">$</span></td><td>✓</td>
+          </tr>
+          <tr>
+            <td class="service">網頁搜尋引擎優化(SEO)<sup>＊</sup></td>
+            <td></td><td></td><td>✓</td>
+          </tr>
+          <tr>
+            <td class="service">Google廣告</td>
+            <td><span class="icon-dollar">$</span></td><td><span class="icon-dollar">$</span></td><td>✓</td>
+          </tr>
+          <tr>
+            <td class="service">一對一銷售指導或建議</td>
+            <td></td><td>✓</td><td>✓</td>
+          </tr>
+          <tr>
+            <td class="service">宣傳期內數據報告</td>
+            <td></td><td>✓</td><td>✓</td>
+          </tr>
+          <tr class="highlight">
+            <td class="service"><b>新客戶體驗價：</b><sup>#</sup></td>
+            <td><b>$4000</b></td>
+            <td><b>$8000</b></td>
+            <td><b>$13000</b></td>
+          </tr>
+          <tr>
+            <td class="service">原價</td>
+            <td><del>$5000</del></td>
+            <td><del>$12888</del></td>
+            <td><del>$18888</del></td>
+          </tr>
+          <tr>
+            <td class="service">預計接觸人數：<sup>%</sup></td>
+            <td>&gt;3500</td>
+            <td>&gt;10000</td>
+            <td>&gt;18000</td>
+          </tr>
+          <tr>
+            <td colspan="4" style="text-align:right;color:#24b183;font-weight:500;background:transparent;">不確定選哪個方案？<a href="#contact" style="color:#3347ff;text-decoration:underline;">立即查詢！</a></td>
+          </tr>
+        </table>
+      </div>
+      <!-- 手機版卡片 -->
+      <div class="plans-cards" aria-label="推廣方案套餐卡片列表">
+        <div class="plan-card">
+          <div class="plan-title">個人商戶</div>
+          <div class="plan-price">$4000 <span style="font-size:0.8em;">體驗價</span></div>
+          <div class="plan-oldprice">原價 $5000</div>
+          <ul class="plan-list">
+            <li><i class="fas fa-check-circle icon-wa"></i> 推廣活動構思</li>
+            <li><i class="fas fa-check-circle icon-wa"></i> 廣告策劃</li>
+            <li><i class="fas fa-check-circle icon-wa"></i> 媒體設計</li>
+            <li><i class="fas fa-check-circle icon-wa"></i> 地區性WhatsApp群組宣傳</li>
+            <li><i class="fas fa-check-circle icon-fb"></i> 地區性Facebook IG宣傳</li>
+            <li><i class="fas fa-dollar-sign icon-dollar"></i> Facebook/IG廣告及Google廣告（需另付費）</li>
+          </ul>
+          <div class="plan-reach">預計接觸人數：<b>&gt;3500</b></div>
+          <button class="plan-btn" onclick="window.open('https://wa.me/852XXXXXXXX', '_blank')">查詢此方案</button>
+        </div>
+        <div class="plan-card">
+          <div class="plan-title">中小企</div>
+          <div class="plan-price">$8000 <span style="font-size:0.8em;">體驗價</span></div>
+          <div class="plan-oldprice">原價 $12888</div>
+          <ul class="plan-list">
+            <li><i class="fas fa-check-circle icon-wa"></i> 推廣活動構思</li>
+            <li><i class="fas fa-check-circle icon-wa"></i> 廣告策劃</li>
+            <li><i class="fas fa-check-circle icon-wa"></i> 媒體設計</li>
+            <li><i class="fas fa-film icon-wa"></i> Reel動畫製作</li>
+            <li><i class="fas fa-check-circle icon-wa"></i> 地區性/全港性WhatsApp群組宣傳</li>
+            <li><i class="fas fa-check-circle icon-fb"></i> 地區性/全港性Facebook IG宣傳</li>
+            <li><i class="fas fa-dollar-sign icon-dollar"></i> Facebook/IG廣告及Google廣告（需另付費）</li>
+            <li><i class="fas fa-user icon-wa"></i> 一對一銷售指導或建議</li>
+            <li><i class="fas fa-chart-bar icon-wa"></i> 宣傳期內數據報告</li>
+          </ul>
+          <div class="plan-reach">預計接觸人數：<b>&gt;10000</b></div>
+          <button class="plan-btn" onclick="window.open('https://wa.me/852XXXXXXXX', '_blank')">查詢此方案</button>
+        </div>
+        <div class="plan-card">
+          <div class="plan-title">企業級</div>
+          <div class="plan-price">$13000 <span style="font-size:0.8em;">體驗價</span></div>
+          <div class="plan-oldprice">原價 $18888</div>
+          <ul class="plan-list">
+            <li><i class="fas fa-check-circle icon-wa"></i> 推廣活動構思</li>
+            <li><i class="fas fa-check-circle icon-wa"></i> 廣告策劃</li>
+            <li><i class="fas fa-check-circle icon-wa"></i> 媒體設計</li>
+            <li><i class="fas fa-film icon-wa"></i> Reel動畫製作</li>
+            <li><i class="fas fa-check-circle icon-wa"></i> 地區性/全港性WhatsApp群組宣傳</li>
+            <li><i class="fas fa-check-circle icon-fb"></i> 地區性/全港性Facebook IG宣傳</li>
+            <li><i class="fas fa-bullhorn icon-fb"></i> 增量Facebook IG廣告</li>
+            <li><i class="fas fa-search icon-wa"></i> 網頁搜尋引擎優化(SEO)</li>
+            <li><i class="fas fa-google icon-wa"></i> Google廣告</li>
+            <li><i class="fas fa-user icon-wa"></i> 一對一銷售指導或建議</li>
+            <li><i class="fas fa-chart-bar icon-wa"></i> 宣傳期內數據報告</li>
+          </ul>
+          <div class="plan-reach">預計接觸人數：<b>&gt;18000</b></div>
+          <button class="plan-btn" onclick="window.open('https://wa.me/852XXXXXXXX', '_blank')">查詢此方案</button>
+        </div>
+      </div>
+      <ul class="remark-list">
+        <li><span class="icon-dollar">$</span> 需要額外支付廣告支出</li>
+        <li>^ 需要機構自行提供10至15張相關照片，或邀請我們團隊到場拍攝需另外收費</li>
+        <li>＊企業需要有官方網站</li>
+        <li># 費用以每個推廣活動計算，一般維持約兩個月</li>
+        <li>% 精確的受眾設定，高效接觸家長群體</li>
+      </ul>
+      <div style="text-align:right;color:#24b183;font-weight:500;">唔知邊個方案啱你？<a href="#contact" style="color:#3347ff;text-decoration:underline;">即刻查詢！</a></div>
+    </section>
+
+    <section class="cta" id="contact">
+      <strong>全方位市場推廣夥伴，專為中小企而設</strong>
+      <div>打破傳統，<span class="tag">企業級</span>市場推廣支援只需文員價錢</div>
+      <div class="cta-list">
+        <span>市場研究</span>
+        <span>廣告及活動策劃</span>
+        <span>數碼行銷</span>
+        <span>數據分析</span>
+        <span>銷售指導</span>
+      </div>
+      <div class="cta-action">
+        由策劃到執行，由洞察到轉化，<br>
+        我哋助您突破瓶頸，全面提升業績！<br>
+        <span style="display:block;margin-top:0.5em;">大環境越難，越要主動出擊！</span>
+      </div>
+      <button class="whatsapp-btn"
+        aria-label="WhatsApp即時查詢"
+        onclick="window.open('https://wa.me/852XXXXXXXX', '_blank');if(typeof gtag==='function'){gtag('event','click',{event_category:'CTA',event_label:'Section WhatsApp'});}">
+        <i class="fab fa-whatsapp"></i> WhatsApp查詢
+      </button>
+      <div style="margin-top:1.4em;">
+        <form id="contactForm" style="background:#f8fafc;border-radius:10px;padding:1.1em 1em 0.5em 1em;box-shadow:0 1px 7px 0 #dbe7ff14;max-width:360px;margin:1.2em auto 0 auto;">
+          <div style="font-weight:600;color:#3347ff;margin-bottom:0.6em;font-size:1.12em;">預約免費諮詢</div>
+          <label for="name" style="font-size:0.98em;">姓名*</label><br>
+          <input id="name" name="name" type="text" required style="width:100%;margin-bottom:0.6em;padding:0.5em;border-radius:5px;border:1px solid #dbe7ff;"><br>
+          <label for="phone" style="font-size:0.98em;">聯絡電話*</label><br>
+          <input id="phone" name="phone" type="tel" required pattern="^[0-9\-+\s()]{6,}$" style="width:100%;margin-bottom:0.6em;padding:0.5em;border-radius:5px;border:1px solid #dbe7ff;"><br>
+          <label for="msg" style="font-size:0.98em;">簡述需求</label><br>
+          <textarea id="msg" name="msg" rows="2" style="width:100%;margin-bottom:0.8em;padding:0.5em;border-radius:5px;border:1px solid #dbe7ff;"></textarea>
+          <button type="submit" style="background:#3347ff;color:#fff;padding:0.6em 2em;border:none;border-radius:5px;font-size:1em;font-weight:600;cursor:pointer;box-shadow:0 1px 5px #3347ff13;">提交預約</button>
+          <div id="formStatus" style="color:#24b183;font-size:0.95em;margin-top:0.7em;min-height:1.2em;"></div>
+        </form>
+      </div>
+    </section>
+
+    <section class="faq-area">
+      <div class="faq-title">常見問題 FAQ</div>
+      <div class="faq-list" role="list">
+        <div class="faq-item">
+          <div class="faq-question" tabindex="0" aria-expanded="false">Q: 我唔清楚自己屬於邊個類型，如何選擇方案？</div>
+          <div class="faq-answer">你可以直接WhatsApp或預約免費諮詢，我哋會根據你嘅行業背景、目標及預算，推薦最合適嘅方案。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" tabindex="0" aria-expanded="false">Q: 推廣期間有咩數據報告或追蹤？</div>
+          <div class="faq-answer">中小企及企業級方案均包含宣傳期內數據報告，讓你即時掌握成效，優化推廣策略。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" tabindex="0" aria-expanded="false">Q: 有冇最低合作期？</div>
+          <div class="faq-answer">每個推廣活動一般約2個月，無需長期合約，靈活配合你嘅需要。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" tabindex="0" aria-expanded="false">Q: 咩時候需要額外收費？</div>
+          <div class="faq-answer">廣告投放預算、現場拍攝、SEO及網站建立等會根據需要另外報價，所有收費均清晰列明，絕無隱藏。</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" tabindex="0" aria-expanded="false">Q: 支援哪些社交平台推廣？</div>
+          <div class="faq-answer">主要包括Facebook、Instagram和WhatsApp群組，亦可根據需要延伸至Google、YouTube、LINE等平台。</div>
+        </div>
+      </div>
+    </section>
+  </main>
   <footer>
-    <p>© 2025 市場推廣公司 | <a href="#">隱私政策</a></p>
+    <div class="footer-links">
+      <a href="tel:852XXXXXXXX"><i class="fas fa-phone"></i> 852-XXXXXXXX</a>
+      <a href="mailto:info@yourdomain.com"><i class="fas fa-envelope"></i> 電郵查詢</a>
+      <a href="https://wa.me/852XXXXXXXX" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+      <a href="https://www.facebook.com/yourfbpage" target="_blank" rel="noopener"><i class="fab fa-facebook"></i> Facebook</a>
+    </div>
+    <div class="footer-icp">© 2025 兒童行業市場推廣團隊 ｜ <a href="#" style="color:#b1b6d2;text-decoration:underline;">私隱政策</a></div>
   </footer>
+  <script>
+    // FAQ 手風琴
+    document.querySelectorAll('.faq-question').forEach(function(q){
+      q.addEventListener('click', function(){
+        var parent = this.parentElement;
+        parent.classList.toggle('active');
+        this.setAttribute('aria-expanded', parent.classList.contains('active'));
+      });
+      q.addEventListener('keypress', function(e){
+        if(e.key==='Enter' || e.key===' '){
+          this.click();
+        }
+      });
+    });
+
+    // 表單模擬提交
+    document.getElementById('contactForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      var btn = this.querySelector('button[type=submit]');
+      btn.disabled = true;
+      btn.textContent = "提交中...";
+      setTimeout(function(){
+        btn.disabled = false;
+        btn.textContent = "提交預約";
+        document.getElementById('formStatus').textContent = "已收到預約，我們會盡快聯絡你！";
+        document.getElementById('contactForm').reset();
+      }, 1200);
+    });
+  </script>
 </body>
 </html>
